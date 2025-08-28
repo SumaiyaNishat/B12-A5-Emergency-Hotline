@@ -48,3 +48,35 @@ copyElement("btn-copy7", "copy-number7")
 copyElement("btn-copy8", "copy-number8")
 
 
+// Coin 
+
+function coinReduce (id,emergency,number1){
+    document.getElementById(id).addEventListener('click',function(){
+        const reduceCoin = document.getElementById('reduce')
+
+    if (reduceCoin.innerText < 20 ){
+        alert("You don't have enough Coin")
+        return ;
+    }
+
+    let currentCoin = parseInt(reduceCoin.innerText)
+    currentCoin-= 20 ;
+
+   reduceCoin.innerText = currentCoin ;
+
+    const title = document.getElementById(emergency).innerText
+    const number= document.getElementById(number1).innerText
+
+    alert("📞 Calling" +" " + title +" "+ number)
+
+    })
+}
+coinReduce("call","title", "copy-number")
+coinReduce("call1","title1", "copy-number1")
+coinReduce("call2" ,"title2", "copy-number2")
+coinReduce("call3", "title3", "copy-number3")
+coinReduce("call4", "title4", "copy-number4")
+coinReduce("call5" ,"title5", "copy-number5")
+coinReduce("call6" ,"title6", "copy-number6")
+coinReduce("call7" ,"title7", "copy-number7")
+coinReduce("call8" ,"title8", "copy-number8")
