@@ -80,3 +80,40 @@ coinReduce("call5" ,"title5", "copy-number5")
 coinReduce("call6" ,"title6", "copy-number6")
 coinReduce("call7" ,"title7", "copy-number7")
 coinReduce("call8" ,"title8", "copy-number8")
+
+
+document.getElementById("btn-clear").addEventListener("click", function() {
+  document.getElementById("clear").innerHTML = "";
+});
+
+function CallHistory(id, newCall, number) {
+  document.getElementById(id).addEventListener("click", function () {
+    const callNew = document.getElementById(newCall).innerText;
+    const newNumber = document.getElementById(number).innerText; 
+    const time = new Date().toLocaleTimeString(); 
+
+    const container = document.getElementById('clear');
+
+    const div = document.createElement("div");
+    div.className ="flex justify-between items-center mt-5 p-5 rounded-lg bg-[#FAFAFA]";
+    div.innerHTML = `
+      <div>
+        <p class="text-[18px] font-bold">${callNew}</p>
+        <p>${newNumber}</p>
+      </div>
+      <div class="text-[18px]">${time}</div>
+    `;
+
+    container.appendChild(div);
+  });
+}
+
+CallHistory("call", "main-title", "copy-number");
+CallHistory("call1", "main-title1", "copy-number1");
+CallHistory("call2", "main-title2", "copy-number2");
+CallHistory("call3", "main-title3", "copy-number3");
+CallHistory("call4", "main-title4", "copy-number4");
+CallHistory("call5", "main-title5", "copy-number5");
+CallHistory("call6", "main-title6", "copy-number6");
+CallHistory("call7", "main-title7", "copy-number7");
+CallHistory("call8", "main-title8", "copy-number8");

@@ -32,15 +32,13 @@
           <h1 class="font-bold text-[#006747]">Emergercy Service</h1>
         </div>
         <div class="flex items-center gap-4">
-          <div
-            class="flex items-center bg-[#41ff6b1a] rounded-[50px] w-[125px] h-[50px] justify-center gap-3"
-          >
+
+          <div class="flex items-center bg-[#41ff6b1a] rounded-[50px] w-[125px] h-[50px] justify-center gap-3">
             <h1 id="count-title">0</h1>
             <img src="./assets/heart.png" class="w-[30px]" alt="" />
           </div>
-          <div
-            class="flex items-center bg-[#41ff6b1a] rounded-[50px] w-[125px] h-[50px] justify-center gap-3"
-          >
+
+          <div class="flex items-center bg-[#41ff6b1a] rounded-[50px] w-[125px] h-[50px] justify-center gap-3">
             <h1 id="reduce">100</h1>
             <img src="./assets/coin.png" class="w-[24px]" alt="" />
           </div>
@@ -53,7 +51,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="bg-[#f5fff6]">
       <!-- hero section -->
       <section>
         <div
@@ -69,11 +67,11 @@
       </section>
 
       <!-- main section -->
-      <section id="cart-container"
-        class="w-11/12 mx-auto py-10 flex flex-col lg:flex-row gap-6"
-      >
-        <section class="">
-          <div class="grid grid-cols-3 gap-4 pb-6">
+      <section id="cart-container"  class="bg-[#f5fff6] w-11/12 mx-auto py-10 flex flex-col lg:flex-row gap-6">
+        
+        <section class="lg:col-span-9">
+        
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pb-6">
             <div class="card bg-base-100 shadow-sm">
               <div class="card-body">
                 <div class="flex justify-between items-center">
@@ -84,7 +82,7 @@
                 </div>
 
                 <div>
-                  <h2 class="text-xl font-bold">National Emergency Number</h2>
+                  <h2 id="main-title" class="text-xl font-bold">National Emergency Number</h2>
                   <p id="title" class="text-[#5C5C5C]">National Emergency</p>
                 </div>
 
@@ -121,7 +119,7 @@
                 </div>
 
                 <div>
-                  <h2 class="text-xl font-bold">Police Helpline Number</h2>
+                  <h2 id="main-title1" class="text-xl font-bold">Police Helpline Number</h2>
                   <p id="title1" class="text-[#5C5C5C]">Police</p>
                 </div>
 
@@ -159,7 +157,7 @@
                 </div>
 
                 <div>
-                  <h2 class="text-xl font-bold">Fire Service Number</h2>
+                  <h2 id="main-title2" class="text-xl font-bold">Fire Service Number</h2>
                   <p id="title2" class="text-[#5C5C5C]">Fire Service</p>
                 </div>
 
@@ -183,7 +181,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-3 gap-4 pb-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pb-6">
             <div class="card bg-base-100 shadow-sm">
               <div class="card-body">
                 <div class="flex justify-between items-center">
@@ -194,7 +192,7 @@
                 </div>
 
                 <div>
-                  <h2 class="text-xl font-bold">Ambulance Service</h2>
+                  <h2 id="main-title3" class="text-xl font-bold">Ambulance Service</h2>
                   <p id="title3" class="text-[#5C5C5C]">Ambulance</p>
                 </div>
 
@@ -231,7 +229,7 @@
                 </div>
 
                 <div>
-                  <h2 class="text-xl font-bold">Women & Child Helpline</h2>
+                  <h2 id="main-title4" class="text-xl font-bold">Women & Child Helpline</h2>
                   <p id="title4" class="text-[#5C5C5C]">Women & Child Helpline</p>
                 </div>
 
@@ -264,7 +262,7 @@
                 </div>
 
                 <div>
-                  <h2 class="text-xl font-bold">Anti-Corruption Helpline</h2>
+                  <h2 id="main-title5" class="text-xl font-bold">Anti-Corruption Helpline</h2>
                   <p id="title5" class="text-[#5C5C5C]">Anti-Corruption</p>
                 </div>
 
@@ -290,7 +288,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-3 gap-4 pb-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pb-6">
             <div class="card bg-base-100 shadow-sm">
               <div class="card-body">
                 <div class="flex justify-between items-center">
@@ -301,31 +299,20 @@
                 </div>
 
                 <div>
-                  <h2 class="text-xl font-bold">Electricity Helpline</h2>
+                  <h2 id="main-title6" class="text-xl font-bold">Electricity Helpline</h2>
                   <p id="title6" class="text-[#5C5C5C]">Electricity Outage</p>
                 </div>
 
                 <div class="py-3">
                   <h1 id="copy-number6" class="text-3xl font-bold">16216</h1>
-                  <p
-                    class="text-[#5C5C5C] bg-gray-200 rounded-2xl w-18 text-center"
-                  >
-                    Electricity
-                  </p>
+                  <p class="text-[#5C5C5C] bg-gray-200 rounded-2xl w-18 text-center">
+                    Electricity</p>
                 </div>
 
                 <div class="flex justify-between mx-auto gap-2 h-10">
-                  <button id="btn-copy6"
-                    class="bg-[#D4D6D5] text-[#5C5C5C] w-[140px] rounded-xl"
-                  >
-                    <span class=""><i class="fa-regular fa-copy"></i></span>
-                    Copy
-                  </button>
-                  <button id="call6"
-                    class="bg-[#00A63E] text-white font-semibold w-[140px] rounded-xl"
-                  >
-                    <span><i class="fa-solid fa-phone"></i></span> Call
-                  </button>
+                  <button id="btn-copy6" class="bg-[#D4D6D5] text-[#5C5C5C] w-[140px] rounded-xl">
+                    <span class=""><i class="fa-regular fa-copy"></i></span>Copy</button>
+                  <button id="call6" class="bg-[#00A63E] text-white font-semibold w-[140px] rounded-xl"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                 </div>
               </div>
             </div>
@@ -340,7 +327,7 @@
                 </div>
 
                 <div class="py-3">
-                  <h2 class="text-xl font-bold">Brac Helpline</h2>
+                  <h2 id="main-title7" class="text-xl font-bold">Brac Helpline</h2>
                   <p id="title7" class="text-[#5C5C5C]">Brac</p>
                 </div>
 
@@ -352,9 +339,7 @@
                 </div>
 
                 <div class="flex justify-between mx-auto gap-2 h-10">
-                  <button id="btn-copy7"
-                    class="bg-[#D4D6D5] text-[#5C5C5C] w-[140px] rounded-xl"
-                  >
+                  <button id="btn-copy7" class="bg-[#D4D6D5] text-[#5C5C5C] w-[140px] rounded-xl">
                     <span class=""><i class="fa-regular fa-copy"></i></span>
                     Copy
                   </button>
@@ -375,7 +360,7 @@
                 </div>
 
                 <div>
-                  <h2 class="text-xl font-bold">Bangladesh Railway Helpline</h2>
+                  <h2 id="main-title8" class="text-xl font-bold">Bangladesh Railway Helpline</h2>
                   <p id="title8" class="text-[#5C5C5C]">Bangladesh Railway</p>
                 </div>
 
@@ -389,21 +374,25 @@
                   <button id="btn-copy8" class="bg-[#D4D6D5] text-[#5C5C5C] w-[140px] rounded-xl">
                   <span class=""><i class="fa-regular fa-copy"></i></span>Copy</button> 
 
-                  <button id="Call8" class="bg-[#00A63E] text-white font-semibold w-[140px] rounded-xl"><span><i class="fa-solid fa-phone"></i></span> Call</button>
+                  <button id="call8" class="bg-[#00A63E] text-white font-semibold w-[140px] rounded-xl"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
-        <section class="w-full lg:w-[380px]">
-          <div class="card bg-base-100 shadow-sm h-[600px] lg:h-[900px] mx-auto">
+<!-- History Section -->
+        <section class="lg:col-span-3 w-full lg:w-[380px]">
+          <div class="card bg-base-100 shadow-sm h-[600px] lg:h-[880px] mx-auto">
             <div class="card-body">
               <div class="flex justify-between items-center">
                 <h1 class="text-xl"><span><i class="fa-solid fa-clock"></i></span>Call History</h1>
-                <button class="bg-[#00A63E] text-white text-xl font-semibold w-[100px] h-[55px] rounded-[50px]">Clear</button>
+                <button id="btn-clear" class="bg-[#00A63E] text-white text-xl font-semibold w-[100px] h-[58px] rounded-[50px]">Clear</button>
               </div>
+              <div id="clear" ></div>
             </div>
+
+          </div>
+          
           </div>
         </section>
       </section>

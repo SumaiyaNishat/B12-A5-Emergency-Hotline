@@ -7,7 +7,6 @@
 ### 📅 Deadline For 30 marks: Any time after 29th August.
 
 ---
-
 ## ✅ Main Requirements (50 Marks)
 
 ### 1. Navbar
@@ -115,7 +114,23 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 3. What is **Event Bubbling** and how does it work?
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
+## Answer
+1. document.getElementById(id) - Selects a single element by its id.
+  document.getElementsByClassName(className) - Selects all elements with the given class.
+  document.querySelector(selector) - Selects the first matching element based on a CSS selector.
+  document.querySelectorAll(selector) - Selects all matching elements using a CSS selector.\
 
+2. const p = document.createElement("p"); // create a new paragraph element
+p.textContent = "This is a paragraph."; // set 
+document.body.appendChild(p); // add
+
+3. Event Bubbling is when an event starts on a child element and then bubbles up to its parent elements. When clicking a button also triggers the click event on its parent div.
+
+4. Event Delegation is when a parent element handles events for its child elements.
+It is useful because it reduces the number of event listeners and also works for elements added dynamically.
+
+5. preventDefault() → stops the browser from doing its usual action (like opening a link or submitting a form).
+stopPropagation() → stops the event from moving up to parent elements. 
 ---
 
 ## 🧪 Challenges Part (10 Marks)
